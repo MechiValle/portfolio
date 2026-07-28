@@ -1,0 +1,60 @@
+.debounce-demo {
+  background: var(--color-bg-raised);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+}
+
+.debounce-demo__title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  margin: 0 0 4px;
+}
+
+.debounce-demo__hint {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-sm);
+}
+
+.debounce-demo__input {
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  padding: 8px 10px;
+  margin-bottom: var(--space-sm);
+}
+
+.debounce-demo__input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.debounce-demo__row {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  padding: 6px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.debounce-demo__label {
+  color: var(--color-text-muted);
+}
+
+.debounce-demo__value {
+  color: var(--color-text);
+  text-align: right;
+  word-break: break-word;
+}
+
+.debounce-demo__value--accent {
+  color: var(--color-accent);
+}

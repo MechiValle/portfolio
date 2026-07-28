@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-md) var(--space-lg) 0;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.nav__brand {
+  color: var(--color-text);
+  letter-spacing: 0.02em;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.nav__links a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav__links a:hover {
+  color: var(--color-text);
+}
+
+.nav__links--accent {
+  color: var(--color-accent) !important;
+}
