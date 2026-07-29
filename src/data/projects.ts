@@ -53,7 +53,7 @@ export const projects: Project[] = [
         es: 'La búsqueda usa la API de RAWG a través de un hook debounced (useDebounce + TanStack Query), así que la petición se dispara recién cuando el usuario deja de tipear.',
       },
       {
-        en: 'The exported image is rendered from a separate, purpose-built component at a fixed 1080×1350 size, kept off-screen and converted with html-to-image — so the shareable output isn\u2019t constrained by the interactive layout\u2019s responsive breakpoints.',
+        en: 'The exported image is rendered from a separate, purpose-built component at a fixed 1080×1350 size, kept off-screen and converted with html-to-image, so the shareable output isn\u2019t constrained by the interactive layout\u2019s responsive breakpoints.',
         es: 'La imagen exportada se renderiza desde un componente separado, armado a medida a 1080×1350 px, mantenido fuera de pantalla y convertido con html-to-image, así el resultado no depende del layout responsive de la interfaz interactiva.',
       },
       {

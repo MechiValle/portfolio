@@ -18,7 +18,7 @@ export const en = {
     heading: 'Lab',
     subheading: 'Small experiments, built for fun',
     debounceTitle: 'Debounce visualizer',
-    debounceHint: 'Type something — the debounced value only updates once you pause.',
+    debounceHint: 'Type something, the debounced value only updates once you pause.',
     debounceRaw: 'raw',
     debounceDebounced: 'debounced (500ms)',
     sortTitle: 'Sort visualizer',
@@ -41,7 +41,7 @@ export const en = {
   },
   contact: {
     heading: "Let's talk",
-    subheading: "Open to front-end roles — reach out any of these ways.",
+    subheading: "Open to front-end roles. Reach out any of these ways.",
     email: 'email',
     github: 'github',
     linkedin: 'linkedin',
