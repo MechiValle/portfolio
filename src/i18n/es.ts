@@ -16,7 +16,7 @@ export const es = {
   },
   lab: {
     heading: 'Lab',
-    subheading: 'Pequeños experimentos, hechos por diversión',
+    subheading: 'Pequeños experimentos hechos por diversión',
     debounceTitle: 'Visualizador de debounce',
     debounceHint: 'Escribí algo, el valor debounced se actualiza recién cuando hacés una pausa.',
     debounceRaw: 'crudo',
