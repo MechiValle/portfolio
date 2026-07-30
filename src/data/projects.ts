@@ -2,6 +2,43 @@ import type { Project } from '../types/project';
 
 export const projects: Project[] = [
   {
+    id: 'ost-showcase',
+    title: {
+      en: 'OST Showcase',
+      es: 'Biblioteca Musical',
+    },
+    tagline: {
+      en: 'A Spotify-style player for original music composed for video games.',
+      es: 'Un reproductor estilo Spotify para música original compuesta para videojuegos.',
+    },
+    problem: {
+      en: 'Wanted a proper showcase for game music, something that felt like an actual streaming app and could keep growing as more tracks get added.',
+      es: 'Quería una vidriera real para música de videojuegos, algo que se sintiera como una app de streaming real y que pudiera seguir creciendo con más canciones.',
+    },
+    decisions: [
+      {
+        en: 'A sticky, Spotify-style player bar that persists across navigation, playback keeps going while browsing between project pages instead of resetting.',
+        es: 'Una barra de reproducción fija estilo Spotify que persiste al navegar, la reproducción sigue mientras se recorren las páginas de proyectos en vez de reiniciarse.',
+      },
+      {
+        en: 'A flat progress bar instead of a waveform, skipping the extra step of generating audio peaks per track while still feeling alive through motion.',
+        es: 'Una barra de progreso plana en vez de un waveform, evitando el paso extra de generar picos de audio por canción, sin perder sensación de vida gracias al movimiento.',
+      },
+      {
+        en: 'Previous button never disables: one click (or tap if mobile) restarts the current song, a second click (within a generous window) jumps to the actual previous track, so there\u2019s always a sensible action instead of a dead button.',
+        es: 'El botón Anterior nunca se deshabilita: un click (o tap en mobile) reinicia la canción actual, un segundo click (con una ventana de tiempo generosa) pasa a la canción anterior real, siempre hay una acción sensata en vez de un botón muerto.',
+      },
+      {
+        en: 'Data model built around projects/albums rather than a flat song list, so the catalog can keep scaling as more tracks get added over time.',
+        es: 'Modelo de datos organizado por proyectos/álbumes en vez de una lista plana de canciones, para que el catálogo pueda seguir creciendo con el tiempo.',
+      },
+    ],
+    stack: ['React', 'TypeScript', 'Vite'],
+    demoUrl: 'https://mechivalle.github.io/ost-showcase/',
+    repoUrl: 'https://github.com/MechiValle/ost-showcase/',
+  },
+
+  {
     id: 'dat-pokemon',
     title: {
       en: "Who's That Pokémon?",
@@ -29,8 +66,8 @@ export const projects: Project[] = [
         es: 'Al responder (bien, mal o pasando) siempre se revela el sprite real y el nombre, así un error también enseña la respuesta en vez de solo penalizar.',
       },
       {
-        en: 'First real project in Next.js, Tailwind, and react-i18next \u2014 deliberately chosen over the tools I already knew, to force learning them properly.',
-        es: 'Primer proyecto real con Next.js, Tailwind y react-i18next, elegidos a propósito por sobre las herramientas que ya conocía, para aprenderlas en serio.',
+        en: 'First real project in Next.js, Tailwind, and react-i18next, deliberately chosen over the tools I already knew, to force learning them properly.',
+        es: 'Primer proyecto real con Next.js, Tailwind y react-i18next, elegidos a propósito por sobre las herramientas que ya conocía para aprenderlas en serio.',
       },
     ],
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'react-i18next', 'PokeAPI'],
