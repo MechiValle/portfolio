@@ -2,6 +2,42 @@ import type { Project } from '../types/project';
 
 export const projects: Project[] = [
   {
+    id: 'wyldling',
+    title: {
+      en: 'Wyldling',
+      es: 'Wyldling',
+    },
+    tagline: {
+      en: 'An interactive companion guide for Wylde Flowers, the info the game doesn\u2019t hand you.',
+      es: 'Una guía interactiva para Wylde Flowers, la información que el juego no te da directamente.',
+    },
+    problem: {
+      en: 'The game\u2019s official wiki is outdated and inaccurate, so I designed and built a full relational database, a REST API, and a front end from scratch to track things like fishing conditions, gift-giving, and relationship events, my first real backend/database project.',
+      es: 'La wiki oficial del juego está desactualizada e imprecisa, así que diseñé y construí desde cero una base de datos relacional completa, una API REST y un front end, mi primer proyecto real de backend/base de datos.',
+    },
+    decisions: [
+      {
+        en: 'Designed the entire relational schema by hand before writing any front-end code, first real experience modeling many-to-many relationships (fish-to-bait-to-weather-to-location, item-to-recipe) instead of just consuming an existing API.',
+        es: 'Diseñé todo el esquema relacional a mano antes de escribir código de front end, primera experiencia real modelando relaciones muchos-a-muchos (pez-carnada-clima-ubicación, ítem-receta) en vez de solo consumir una API ya existente.',
+      },
+      {
+        en: 'Built on Supabase (Postgres + auto-generated REST API) with row-level security policies scoped to public read-only access, rather than standing up a custom backend server.',
+        es: 'Construido sobre Supabase (Postgres + API REST autogenerada) con políticas de row-level security limitadas a acceso público de solo lectura, en vez de levantar un servidor backend propio.',
+      },
+      {
+        en: 'Deliberately avoided duplicating info the game already shows on-screen (prices, ingredients), the guide only covers what\u2019s genuinely hard to find in-game, keeping the scope honest instead of trying to be an exhaustive wiki.',
+        es: 'Evité a propósito duplicar información que el juego ya muestra en pantalla (precios, ingredientes), la guía solo cubre lo que es genuinamente difícil de encontrar en el juego, manteniendo un alcance honesto en vez de intentar ser una wiki exhaustiva.',
+      },
+      {
+        en: 'No accounts or login, all progress tracking (fish caught, recipes unlocked, gifts given) lives in the browser\u2019s local storage, keeping the tool free and frictionless to use.',
+        es: 'Sin cuentas ni login, todo el seguimiento de progreso (peces atrapados, recetas desbloqueadas, regalos entregados) vive en el almacenamiento local del navegador, manteniendo la herramienta gratuita y sin fricción.',
+      },
+    ],
+    stack: ['React', 'TypeScript', 'Vite', 'Supabase', 'PostgreSQL'],
+    demoUrl: 'https://wyldling.vercel.app/',
+    repoUrl: 'https://github.com/MechiValle/wyldling'
+  },
+  {
     id: 'ost-showcase',
     title: {
       en: 'OST Showcase',
@@ -73,40 +109,6 @@ export const projects: Project[] = [
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'react-i18next', 'PokeAPI'],
     demoUrl: 'https://mechivalle.github.io/dat-pokemon',
     repoUrl: 'https://github.com/MechiValle/dat-pokemon',
-  },
-
-
-  {
-    id: 'cronime',
-    title: {
-      en: 'Cronime',
-      es: 'Cronime',
-    },
-    tagline: {
-      en: 'A streak-based trivia game: guess which anime came first.',
-      es: 'Un juego de trivia: adiviná qué anime salió primero.',
-    },
-    problem: {
-      en: 'Wanted a quick, replayable browser game with no backend, backed by real anime data instead of a hardcoded list.',
-      es: 'Quería un juego de navegador rápido y rejugable, sin backend, con datos reales de anime en vez de una lista fija.',
-    },
-    decisions: [
-      {
-        en: 'Used the Jikan API with a cached local pool (~1000 titles) refreshed weekly, so the game works offline-ish and doesn\u2019t hammer the API on every load.',
-        es: 'Usé la API de Jikan con un pool local cacheado (~1000 títulos) que se refresca semanalmente, así el juego funciona casi offline y no satura la API en cada carga.',
-      },
-      {
-        en: 'TanStack Query for fetching/caching, React hooks + Context for game state, Local Storage for best streak/time persistence.',
-        es: 'TanStack Query para fetching/caching, React hooks + Context para el estado del juego, Local Storage para persistir la mejor racha y tiempo.',
-      },
-      {
-        en: 'Pair-generation rules (no duplicates, no tied years, minimum 3-year gap) to keep every round fair and unambiguous.',
-        es: 'Reglas de generación de pares (sin duplicados, sin empates de año, diferencia mínima de 3 años) para que cada ronda sea justa y sin ambigüedad.',
-      },
-    ],
-    stack: ['React', 'TypeScript', 'Vite', 'Material UI', 'TanStack Query'],
-    demoUrl: 'https://mechivalle.github.io/cronime',
-    repoUrl: 'https://github.com/MechiValle/cronime',
   },
   {
     id: 'cinco-juegos',
